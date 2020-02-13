@@ -1,0 +1,373 @@
+/*===============
+     BESIC SETUP
+===================*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Lora', serif;
+  scroll-behavior: smooth;
+  line-height: 130%;
+  color: #fff;
+}
+
+/*===============
+    REUSABALE SECTION
+===================*/
+section {
+  padding: 50px 0;
+}
+
+.all-btn {
+  background: #7b77c9;
+  padding: 10px 16px;
+  text-align: center;
+  margin: 30px auto;
+  border-radius: 3px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.all-btn:hover {
+  background: rgba(108, 76, 236, 0.8);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.all-btn a {
+  margin: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/*===============
+    HERO SECTION
+===================*/
+.header-section {
+  -webkit-clip-path: polygon(100% 0, 100% 80%, 50% 100%, 50% 100%, 0 80%, 0% 0%);
+          clip-path: polygon(100% 0, 100% 80%, 50% 100%, 50% 100%, 0 80%, 0% 0%);
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(131, 101, 252, 0.4)), to(rgba(108, 76, 236, 0.8))), url("../img/hero-bg.jpg") no-repeat top center/cover;
+  background: linear-gradient(rgba(131, 101, 252, 0.4), rgba(108, 76, 236, 0.8)), url("../img/hero-bg.jpg") no-repeat top center/cover;
+  padding: 60px 0;
+  color: #fff;
+}
+
+.header-section .logo a img {
+  height: 80px;
+}
+
+.header-section .hero-text {
+  padding: 80px 35px;
+}
+
+.header-section .hero-text h2 {
+  line-height: 120%;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.header-section .hero-text h2 .ar {
+  color: #bbff00;
+}
+
+.header-section .hero-text p {
+  padding-top: 25px;
+  font-family: 'Lora', serif;
+  width: 60%;
+  margin: auto;
+  font-weight: 300;
+}
+
+.header-section .scroll-icon a .fas {
+  display: inline-block;
+  font-size: 16px;
+  color: #bbff00;
+  -webkit-transition: .1s all ease-in-out;
+  transition: .1s all ease-in-out;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  border: 1px solid #bbff00;
+}
+
+.header-section .scroll-icon a .fas:hover {
+  -webkit-transition: .1s all ease-in-out;
+  transition: .1s all ease-in-out;
+  color: #fff;
+}
+
+/*===============
+    WHAT DO SECTION
+===================*/
+.what-do-section {
+  background: url("../img/bg.png") no-repeat center/cover;
+  color: #333;
+  padding: 50px 0;
+}
+
+.what-do-section .little-description {
+  text-align: center;
+}
+
+.what-do-section .little-description p {
+  width: 60%;
+  margin: 20px auto;
+}
+
+.what-do-section h2 {
+  position: relative;
+  text-align: center;
+  margin-top: 70px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.what-do-section .do {
+  border: 1.5px solid #6c4cec;
+  padding: 30px 25px;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.what-do-section .do p {
+  font-size: 14px;
+  margin-top: 8px;
+  font-weight: 300;
+  line-height: 1.6;
+  font-family: 'Lora', serif;
+}
+
+.what-do-section .heading::after {
+  content: '';
+  width: 125px;
+  height: 3px;
+  background: rgba(108, 76, 236, 0.8);
+  bottom: -28px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+/*=====================
+   PORTFOLIO SECTION
+=======================*/
+.portfolio-section {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 35, 46, 0.9)), to(rgba(35, 35, 46, 0.8))), url("../img/protfolio.jpg") no-repeat top/cover;
+  background: linear-gradient(rgba(35, 35, 46, 0.9), rgba(35, 35, 46, 0.8)), url("../img/protfolio.jpg") no-repeat top/cover;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+}
+
+.portfolio-section h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.portfolio-section .box {
+  margin-top: 40px;
+}
+
+.portfolio-section .data {
+  margin: 15px 0;
+}
+
+.portfolio-section .data span {
+  color: #818baa;
+  font-size: 14px;
+}
+
+.portfolio-section .data h5 {
+  margin-top: 10px;
+  font-size: 19px;
+}
+
+.portfolio-section .menu {
+  margin-top: 20px;
+}
+
+.portfolio-section .menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.portfolio-section .menu li a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.portfolio-section .menu li .cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #bbff00;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.portfolio-section .menu li .cool-link:hover::after {
+  width: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/*=====================
+   PHOTOGRAPHY SECTION
+=======================*/
+.photography-section {
+  background: url("../img/bg.png") no-repeat center/cover;
+  text-align: center;
+}
+
+.photography-section .little-description {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.photography-section .little-description h2 {
+  font-weight: 700;
+  position: relative;
+}
+
+.photography-section .little-description p {
+  width: 65%;
+  margin: auto;
+  margin-top: 35px;
+}
+
+.photography-section .data {
+  margin: 15px 0;
+}
+
+.photography-section .heading::after {
+  content: '';
+  width: 160px;
+  height: 3px;
+  background: rgba(108, 76, 236, 0.8);
+  bottom: -20px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.photography-section .photography-img {
+  width: 345px;
+}
+
+/*=====================
+   SUBSCRIVE SECTION
+=======================*/
+.subscrive-section {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 35, 46, 0.9)), to(rgba(35, 35, 46, 0.8))), url("../img/s1.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(35, 35, 46, 0.9), rgba(35, 35, 46, 0.8)), url("../img/s1.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+}
+
+.subscrive-section .subscrive {
+  width: 40%;
+  margin: auto;
+  padding-top: 80px;
+}
+
+.subscrive-section .subscrive .s-logo {
+  width: 65px;
+}
+
+.subscrive-section .subscrive p {
+  padding: 30px 0;
+  margin: 0;
+}
+
+.subscrive-section .btn-1 {
+  display: inline-block;
+  padding-bottom: 80px;
+}
+
+.subscrive-section .sub {
+  padding: 8.2px;
+  border-radius: 5px;
+  border: none;
+}
+
+.subscrive-section .b-s {
+  margin: 10px 0;
+  display: inline-block;
+  background: #7b77c9;
+  padding: 9px 16px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  outline: none;
+}
+
+.subscrive-section .b-s:hover {
+  background: rgba(108, 76, 236, 0.8);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/*=====================
+   FOOTER SECTION
+=======================*/
+.footer-section {
+  background: url("../img/bg.png") no-repeat center/cover;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer-section .footer-menu ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.footer-section .footer-menu ul li i {
+  font-size: 22px;
+  color: #dbdbdb;
+}
+
+.footer-section .footer-bottom {
+  color: #c7c1c1;
+}
+
+@media screen and (max-width: 768px) {
+  .header-section .hero-text h2 {
+    font-size: 30px;
+  }
+  .header-section .hero-text p {
+    width: 70%;
+  }
+  .what-do-section h2 {
+    font-size: 30px;
+  }
+  .portfolio-section h2 {
+    font-size: 30px;
+  }
+  .portfolio-section .portfolio-img {
+    width: 330px;
+  }
+  .photography-section h2 {
+    font-size: 30px;
+  }
+  .photography-section .photography-img {
+    width: 330px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
